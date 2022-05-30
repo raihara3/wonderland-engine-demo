@@ -1,0 +1,1309 @@
+{
+    "objects": {
+        "14": {
+            "name": "Player",
+            "components": [
+                {
+                    "type": "wasd-controls",
+                    "wasd-controls": {
+                        "headObject": "17"
+                    }
+                }
+            ],
+            "transformation": [
+                0.490524,
+                0.0,
+                0.8714274,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                -0.8714274,
+                0.0,
+                0.490524,
+                0.0,
+                -2.6877918,
+                1.1786487,
+                1.5543167,
+                1.0
+            ]
+        },
+        "15": {
+            "name": "FloorPlane",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "7",
+                        "material": "20"
+                    }
+                }
+            ],
+            "transformation": [
+                4.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                -0.0016164,
+                -3.9999997,
+                0.0,
+                0.0,
+                3.9999997,
+                -0.0016164,
+                0.0,
+                0.0,
+                0.0,
+                1.192092895507813e-7,
+                1.0
+            ],
+            "deleted": true
+        },
+        "16": {
+            "name": "Cube",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "8",
+                        "material": "22"
+                    }
+                }
+            ],
+            "transformation": [
+                0.5,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.5,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.5,
+                0.0,
+                0.0,
+                0.4999999,
+                5.960464477539065e-8,
+                1.0
+            ]
+        },
+        "17": {
+            "name": "NonVrCamera",
+            "parent": "14",
+            "components": [
+                {
+                    "type": "view"
+                },
+                {
+                    "type": "mouse-look"
+                }
+            ]
+        },
+        "18": {
+            "name": "EyeLeft",
+            "parent": "14",
+            "components": [
+                {
+                    "type": "view"
+                },
+                {
+                    "type": "input",
+                    "input": {
+                        "type": "eye left"
+                    }
+                }
+            ]
+        },
+        "19": {
+            "name": "EyeRight",
+            "parent": "14",
+            "components": [
+                {
+                    "type": "view"
+                },
+                {
+                    "type": "input",
+                    "input": {
+                        "type": "eye right"
+                    }
+                }
+            ],
+            "deleted": true
+        },
+        "21": {
+            "name": "Light",
+            "components": [
+                {
+                    "type": "light",
+                    "light": {
+                        "attenuation": 0.1
+                    }
+                }
+            ],
+            "transformation": [
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                3.0,
+                2.0,
+                1.0
+            ]
+        },
+        "23": {
+            "name": "Light.000",
+            "components": [
+                {
+                    "type": "light",
+                    "light": {
+                        "attenuation": 0.1
+                    }
+                }
+            ],
+            "transformation": [
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                -1.0,
+                3.0,
+                -1.0,
+                1.0
+            ]
+        },
+        "24": {
+            "name": "Cone",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "10",
+                        "material": "25"
+                    }
+                }
+            ],
+            "transformation": [
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                1.5,
+                1.0,
+                -1.4901161193847657e-8,
+                1.0
+            ]
+        },
+        "27": {
+            "name": "Sphere",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "9",
+                        "material": "26"
+                    }
+                }
+            ],
+            "transformation": [
+                0.75,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.75,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.75,
+                0.0,
+                0.4999999,
+                0.75,
+                -1.25,
+                1.0
+            ]
+        },
+        "44": {
+            "link": {
+                "name": "AR Target",
+                "file": "models\\ar-target.glb"
+            },
+            "parent": "18",
+            "components": [
+                null,
+                {
+                    "type": "hit-test-location"
+                },
+                {
+                    "type": "spawn-mesh-on-select",
+                    "spawn-mesh-on-select": {
+                        "mesh": "8",
+                        "material": "22"
+                    }
+                }
+            ],
+            "transformation": [
+                0.5,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.5,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.5,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ]
+        },
+        "45": {
+            "name": "EyeRight",
+            "parent": "14",
+            "components": [
+                {
+                    "type": "view"
+                },
+                {
+                    "type": "input",
+                    "input": {
+                        "type": "eye right"
+                    }
+                }
+            ]
+        },
+        "48": {
+            "name": "kyoryu",
+            "transformation": [
+                0.8539196,
+                0.0,
+                1.2332165,
+                0.0,
+                0.0,
+                1.5,
+                0.0,
+                0.0,
+                -1.2332165,
+                0.0,
+                0.8539196,
+                0.0,
+                0.0,
+                1.0000052,
+                -0.2,
+                1.0
+            ]
+        },
+        "87": {
+            "link": {
+                "name": "Roundcube.036",
+                "file": "models\\kyoryu.glb"
+            },
+            "parent": "48"
+        },
+        "88": {
+            "link": {
+                "name": "Roundcube.037",
+                "file": "models\\kyoryu.glb"
+            },
+            "parent": "48"
+        },
+        "89": {
+            "link": {
+                "name": "Roundcube.038",
+                "file": "models\\kyoryu.glb"
+            },
+            "parent": "48"
+        },
+        "90": {
+            "link": {
+                "name": "Roundcube.039",
+                "file": "models\\kyoryu.glb"
+            },
+            "parent": "48"
+        },
+        "91": {
+            "link": {
+                "name": "Roundcube.040",
+                "file": "models\\kyoryu.glb"
+            },
+            "parent": "48"
+        },
+        "92": {
+            "link": {
+                "name": "Roundcube.041",
+                "file": "models\\kyoryu.glb"
+            },
+            "parent": "48"
+        },
+        "93": {
+            "link": {
+                "name": "Roundcube.042",
+                "file": "models\\kyoryu.glb"
+            },
+            "parent": "48"
+        },
+        "94": {
+            "link": {
+                "name": "Roundcube.043",
+                "file": "models\\kyoryu.glb"
+            },
+            "parent": "48"
+        },
+        "95": {
+            "link": {
+                "name": "Roundcube.044",
+                "file": "models\\kyoryu.glb"
+            },
+            "parent": "48"
+        },
+        "96": {
+            "link": {
+                "name": "Roundcube.045",
+                "file": "models\\kyoryu.glb"
+            },
+            "parent": "48"
+        },
+        "97": {
+            "link": {
+                "name": "球.002",
+                "file": "models\\kyoryu.glb"
+            },
+            "parent": "48"
+        },
+        "98": {
+            "link": {
+                "name": "Roundcube.046",
+                "file": "models\\kyoryu.glb"
+            },
+            "parent": "48"
+        },
+        "99": {
+            "link": {
+                "name": "Roundcube.047",
+                "file": "models\\kyoryu.glb"
+            },
+            "parent": "48"
+        },
+        "100": {
+            "link": {
+                "name": "Roundcube.048",
+                "file": "models\\kyoryu.glb"
+            },
+            "parent": "48"
+        },
+        "101": {
+            "link": {
+                "name": "Roundcube.049",
+                "file": "models\\kyoryu.glb"
+            },
+            "parent": "48"
+        },
+        "102": {
+            "link": {
+                "name": "Roundcube.050",
+                "file": "models\\kyoryu.glb"
+            },
+            "parent": "48"
+        },
+        "103": {
+            "link": {
+                "name": "Roundcube.051",
+                "file": "models\\kyoryu.glb"
+            },
+            "parent": "48"
+        },
+        "104": {
+            "link": {
+                "name": "Roundcube.052",
+                "file": "models\\kyoryu.glb"
+            },
+            "parent": "48"
+        },
+        "105": {
+            "link": {
+                "name": "Roundcube.053",
+                "file": "models\\kyoryu.glb"
+            },
+            "parent": "48"
+        },
+        "106": {
+            "link": {
+                "name": "Cube.007",
+                "file": "models\\kyoryu.glb"
+            },
+            "parent": "48"
+        },
+        "107": {
+            "link": {
+                "name": "Cube.008",
+                "file": "models\\kyoryu.glb"
+            },
+            "parent": "48"
+        },
+        "108": {
+            "link": {
+                "name": "Roundcube.054",
+                "file": "models\\kyoryu.glb"
+            },
+            "parent": "48"
+        },
+        "109": {
+            "link": {
+                "name": "Roundcube.055",
+                "file": "models\\kyoryu.glb"
+            },
+            "parent": "48"
+        },
+        "110": {
+            "link": {
+                "name": "Cube.009",
+                "file": "models\\kyoryu.glb"
+            },
+            "parent": "48"
+        },
+        "111": {
+            "link": {
+                "name": "Cube.010",
+                "file": "models\\kyoryu.glb"
+            },
+            "parent": "48"
+        },
+        "112": {
+            "link": {
+                "name": "Roundcube.056",
+                "file": "models\\kyoryu.glb"
+            },
+            "parent": "48"
+        },
+        "113": {
+            "link": {
+                "name": "Roundcube.057",
+                "file": "models\\kyoryu.glb"
+            },
+            "parent": "48"
+        },
+        "114": {
+            "link": {
+                "name": "Cube.011",
+                "file": "models\\kyoryu.glb"
+            },
+            "parent": "48"
+        },
+        "115": {
+            "link": {
+                "name": "Cube.012",
+                "file": "models\\kyoryu.glb"
+            },
+            "parent": "48"
+        },
+        "116": {
+            "link": {
+                "name": "Roundcube.058",
+                "file": "models\\kyoryu.glb"
+            },
+            "parent": "48"
+        },
+        "117": {
+            "link": {
+                "name": "Roundcube.059",
+                "file": "models\\kyoryu.glb"
+            },
+            "parent": "48"
+        },
+        "118": {
+            "name": "ahiru",
+            "transformation": [
+                0.7229663,
+                0.0,
+                0.6908816,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                -0.6908816,
+                0.0,
+                0.7229663,
+                0.0,
+                -0.4000006,
+                0.0,
+                -0.9000039,
+                1.0
+            ],
+            "components": [
+                {
+                    "type": "animation",
+                    "animation": {
+                        "animation": "141",
+                        "autoplay": true,
+                        "playCount": 10
+                    }
+                }
+            ]
+        },
+        "128": {
+            "link": {
+                "name": "アーマチュア.001",
+                "file": "models\\ahiru_animation.glb"
+            },
+            "parent": "118"
+        },
+        "129": {
+            "link": {
+                "name": "Cube.009<アーマチュア.001",
+                "file": "models\\ahiru_animation.glb"
+            },
+            "parent": "128"
+        },
+        "130": {
+            "link": {
+                "name": "Cube.010<アーマチュア.001",
+                "file": "models\\ahiru_animation.glb"
+            },
+            "parent": "128"
+        },
+        "131": {
+            "link": {
+                "name": "Roundcube.006<アーマチュア.001",
+                "file": "models\\ahiru_animation.glb"
+            },
+            "parent": "128"
+        },
+        "132": {
+            "link": {
+                "name": "Roundcube.007<アーマチュア.001",
+                "file": "models\\ahiru_animation.glb"
+            },
+            "parent": "128"
+        },
+        "133": {
+            "link": {
+                "name": "Bone<アーマチュア.001",
+                "file": "models\\ahiru_animation.glb"
+            },
+            "parent": "128"
+        },
+        "134": {
+            "link": {
+                "name": "Bone.001<Bone<アーマチュア.001",
+                "file": "models\\ahiru_animation.glb"
+            },
+            "parent": "133"
+        },
+        "135": {
+            "link": {
+                "name": "Bone.002<Bone.001<Bone<アーマチュア.001",
+                "file": "models\\ahiru_animation.glb"
+            },
+            "parent": "134"
+        },
+        "136": {
+            "link": {
+                "name": "Bone.003<アーマチュア.001",
+                "file": "models\\ahiru_animation.glb"
+            },
+            "parent": "128"
+        },
+        "137": {
+            "link": {
+                "name": "Bone.004<Bone.003<アーマチュア.001",
+                "file": "models\\ahiru_animation.glb"
+            },
+            "parent": "136"
+        },
+        "138": {
+            "link": {
+                "name": "Bone.005<Bone.004<Bone.003<アーマチュア.001",
+                "file": "models\\ahiru_animation.glb"
+            },
+            "parent": "137"
+        },
+        "139": {
+            "link": {
+                "name": "Bone.006<Bone.005<Bone.004<Bone.003<アーマチュア.001",
+                "file": "models\\ahiru_animation.glb"
+            },
+            "parent": "138"
+        },
+        "140": {
+            "link": {
+                "name": "Bone.007<Bone.006<Bone.005<Bone.004<Bone.003<アーマチュア.001",
+                "file": "models\\ahiru_animation.glb"
+            },
+            "parent": "139"
+        }
+    },
+    "meshes": {
+        "7": {
+            "link": {
+                "name": "PrimitivePlane",
+                "file": "default"
+            }
+        },
+        "8": {
+            "link": {
+                "name": "PrimitiveCube",
+                "file": "default"
+            }
+        },
+        "9": {
+            "link": {
+                "name": "PrimitiveSphere",
+                "file": "default"
+            }
+        },
+        "10": {
+            "link": {
+                "name": "PrimitiveCone",
+                "file": "default"
+            }
+        },
+        "11": {
+            "link": {
+                "name": "PrimitiveCylinder",
+                "file": "default"
+            }
+        },
+        "12": {
+            "link": {
+                "name": "PrimitiveCircle",
+                "file": "default"
+            }
+        },
+        "43": {
+            "link": {
+                "name": "AR Target Mesh",
+                "file": "models\\ar-target.glb"
+            }
+        },
+        "56": {
+            "link": {
+                "name": "Roundcube.011",
+                "file": "models\\kyoryu.glb"
+            }
+        },
+        "57": {
+            "link": {
+                "name": "Roundcube.012",
+                "file": "models\\kyoryu.glb"
+            }
+        },
+        "58": {
+            "link": {
+                "name": "Roundcube.024",
+                "file": "models\\kyoryu.glb"
+            }
+        },
+        "59": {
+            "link": {
+                "name": "Roundcube.026",
+                "file": "models\\kyoryu.glb"
+            }
+        },
+        "60": {
+            "link": {
+                "name": "Roundcube.027",
+                "file": "models\\kyoryu.glb"
+            }
+        },
+        "61": {
+            "link": {
+                "name": "Roundcube.041",
+                "file": "models\\kyoryu.glb"
+            }
+        },
+        "62": {
+            "link": {
+                "name": "Roundcube.042",
+                "file": "models\\kyoryu.glb"
+            }
+        },
+        "63": {
+            "link": {
+                "name": "Roundcube.043",
+                "file": "models\\kyoryu.glb"
+            }
+        },
+        "64": {
+            "link": {
+                "name": "Roundcube.044",
+                "file": "models\\kyoryu.glb"
+            }
+        },
+        "65": {
+            "link": {
+                "name": "Roundcube.045",
+                "file": "models\\kyoryu.glb"
+            }
+        },
+        "66": {
+            "link": {
+                "name": "球.002",
+                "file": "models\\kyoryu.glb"
+            }
+        },
+        "67": {
+            "link": {
+                "name": "Roundcube.046",
+                "file": "models\\kyoryu.glb"
+            }
+        },
+        "68": {
+            "link": {
+                "name": "Roundcube.047",
+                "file": "models\\kyoryu.glb"
+            }
+        },
+        "69": {
+            "link": {
+                "name": "Roundcube.048",
+                "file": "models\\kyoryu.glb"
+            }
+        },
+        "70": {
+            "link": {
+                "name": "Roundcube.049",
+                "file": "models\\kyoryu.glb"
+            }
+        },
+        "71": {
+            "link": {
+                "name": "Roundcube.050",
+                "file": "models\\kyoryu.glb"
+            }
+        },
+        "72": {
+            "link": {
+                "name": "Roundcube.051",
+                "file": "models\\kyoryu.glb"
+            }
+        },
+        "73": {
+            "link": {
+                "name": "Roundcube.052",
+                "file": "models\\kyoryu.glb"
+            }
+        },
+        "74": {
+            "link": {
+                "name": "Roundcube.053",
+                "file": "models\\kyoryu.glb"
+            }
+        },
+        "75": {
+            "link": {
+                "name": "Cube.005",
+                "file": "models\\kyoryu.glb"
+            }
+        },
+        "76": {
+            "link": {
+                "name": "Cube.006",
+                "file": "models\\kyoryu.glb"
+            }
+        },
+        "77": {
+            "link": {
+                "name": "Roundcube.054",
+                "file": "models\\kyoryu.glb"
+            }
+        },
+        "78": {
+            "link": {
+                "name": "Roundcube.055",
+                "file": "models\\kyoryu.glb"
+            }
+        },
+        "79": {
+            "link": {
+                "name": "Cube.007",
+                "file": "models\\kyoryu.glb"
+            }
+        },
+        "80": {
+            "link": {
+                "name": "Cube.008",
+                "file": "models\\kyoryu.glb"
+            }
+        },
+        "81": {
+            "link": {
+                "name": "Roundcube.056",
+                "file": "models\\kyoryu.glb"
+            }
+        },
+        "82": {
+            "link": {
+                "name": "Roundcube.057",
+                "file": "models\\kyoryu.glb"
+            }
+        },
+        "83": {
+            "link": {
+                "name": "Cube.009",
+                "file": "models\\kyoryu.glb"
+            }
+        },
+        "84": {
+            "link": {
+                "name": "Cube.010",
+                "file": "models\\kyoryu.glb"
+            }
+        },
+        "85": {
+            "link": {
+                "name": "Roundcube.058",
+                "file": "models\\kyoryu.glb"
+            }
+        },
+        "86": {
+            "link": {
+                "name": "Roundcube.059",
+                "file": "models\\kyoryu.glb"
+            }
+        },
+        "123": {
+            "link": {
+                "name": "Cube.001",
+                "file": "models\\ahiru_animation.glb"
+            }
+        },
+        "124": {
+            "link": {
+                "name": "Cube.002",
+                "file": "models\\ahiru_animation.glb"
+            }
+        },
+        "125": {
+            "link": {
+                "name": "Roundcube.001",
+                "file": "models\\ahiru_animation.glb"
+            }
+        },
+        "126": {
+            "link": {
+                "name": "Roundcube.003",
+                "file": "models\\ahiru_animation.glb"
+            }
+        }
+    },
+    "textures": {
+        "t0": {
+            "link": {
+                "name": "DefaultFont",
+                "file": "default"
+            },
+            "name": "DefaultFont"
+        }
+    },
+    "images": {
+        "f0": {
+            "link": {
+                "name": "DefaultFontImage",
+                "file": "default"
+            }
+        }
+    },
+    "materials": {
+        "DefaultFontMaterial": {
+            "link": {
+                "name": "DefaultFontMaterial",
+                "file": "default"
+            }
+        },
+        "20": {
+            "name": "White",
+            "shader": "Phong",
+            "Phong": {
+                "specularColor": [
+                    9.999899930335233e-7,
+                    9.99993744699168e-7,
+                    9.999999974752428e-7,
+                    1.0
+                ],
+                "shininess": 1
+            }
+        },
+        "22": {
+            "name": "Pink",
+            "Phong": {
+                "diffuseColor": [
+                    0.9098039,
+                    0.0,
+                    0.5411764,
+                    1.0
+                ],
+                "specularColor": [
+                    9.999899930335233e-7,
+                    9.999911299019005e-7,
+                    9.999999974752428e-7,
+                    1.0
+                ],
+                "shininess": 10,
+                "ambientColor": [
+                    0.317647,
+                    0.0,
+                    0.2165777,
+                    1.0
+                ]
+            }
+        },
+        "25": {
+            "name": "Yellow",
+            "Phong": {
+                "diffuseColor": [
+                    1.0,
+                    0.8039215,
+                    0.0,
+                    1.0
+                ],
+                "specularColor": [
+                    9.999999974752428e-7,
+                    9.999899930335233e-7,
+                    9.999899930335233e-7,
+                    1.0
+                ],
+                "ambientColor": [
+                    0.3843137,
+                    0.3089579,
+                    0.0,
+                    1.0
+                ]
+            }
+        },
+        "26": {
+            "name": "Green",
+            "Phong": {
+                "diffuseColor": [
+                    0.1529411,
+                    0.7882353,
+                    0.5411764,
+                    1.0
+                ],
+                "specularColor": [
+                    9.999999974752428e-7,
+                    9.999899930335233e-7,
+                    9.999899930335233e-7,
+                    1.0
+                ],
+                "ambientColor": [
+                    0.0,
+                    0.2352941,
+                    0.1437908,
+                    1.0
+                ]
+            }
+        },
+        "42": {
+            "link": {
+                "name": "AR Target Material",
+                "file": "models\\ar-target.glb"
+            },
+            "pipeline": "39",
+            "Phong": {
+                "ambientColor": [
+                    0.5921568,
+                    0.5921509,
+                    0.5921509,
+                    1.0
+                ],
+                "diffuseColor": [
+                    1.0,
+                    0.9999899,
+                    0.9999899,
+                    1.0
+                ]
+            }
+        },
+        "49": {
+            "link": {
+                "name": "body",
+                "file": "models\\kyoryu.glb"
+            }
+        },
+        "50": {
+            "link": {
+                "name": "toge",
+                "file": "models\\kyoryu.glb"
+            }
+        },
+        "51": {
+            "link": {
+                "name": "eye",
+                "file": "models\\kyoryu.glb"
+            }
+        },
+        "52": {
+            "link": {
+                "name": "tooth",
+                "file": "models\\kyoryu.glb"
+            }
+        },
+        "53": {
+            "link": {
+                "name": "body.001",
+                "file": "models\\kyoryu.glb"
+            }
+        },
+        "54": {
+            "link": {
+                "name": "mouse",
+                "file": "models\\kyoryu.glb"
+            }
+        },
+        "55": {
+            "link": {
+                "name": "eye.001",
+                "file": "models\\kyoryu.glb"
+            }
+        },
+        "119": {
+            "link": {
+                "name": "body.001",
+                "file": "models\\ahiru_animation.glb"
+            }
+        },
+        "120": {
+            "link": {
+                "name": "mouse.001",
+                "file": "models\\ahiru_animation.glb"
+            }
+        },
+        "121": {
+            "link": {
+                "name": "eye.001",
+                "file": "models\\ahiru_animation.glb"
+            }
+        },
+        "122": {
+            "link": {
+                "name": "white",
+                "file": "models\\ahiru_animation.glb"
+            }
+        }
+    },
+    "shaders": {
+        "1": {
+            "link": {
+                "name": "DistanceFieldVector Textured",
+                "file": "default"
+            }
+        },
+        "2": {
+            "link": {
+                "name": "Flat",
+                "file": "default"
+            }
+        },
+        "3": {
+            "link": {
+                "name": "Flat Textured",
+                "file": "default"
+            }
+        },
+        "4": {
+            "link": {
+                "name": "MeshVisualizer",
+                "file": "default"
+            }
+        },
+        "5": {
+            "link": {
+                "name": "Phong",
+                "file": "default"
+            }
+        },
+        "6": {
+            "link": {
+                "name": "Phong Textured",
+                "file": "default"
+            }
+        },
+        "28": {
+            "link": {
+                "name": "Dynamic",
+                "file": "default"
+            }
+        },
+        "29": {
+            "link": {
+                "name": "Particle Textured",
+                "file": "default"
+            }
+        },
+        "30": {
+            "link": {
+                "name": "Skinning",
+                "file": "default"
+            }
+        },
+        "31": {
+            "link": {
+                "name": "Static",
+                "file": "default"
+            }
+        },
+        "32": {
+            "link": {
+                "name": "DistanceFieldVector",
+                "file": "default"
+            }
+        },
+        "37": {
+            "link": {
+                "name": "Particle",
+                "file": "default"
+            }
+        },
+        "46": {
+            "link": {
+                "name": "Depth",
+                "file": "default"
+            }
+        }
+    },
+    "settings": {
+        "project": {
+            "name": "MyWonderland",
+            "version": [
+                0,
+                8,
+                10
+            ]
+        },
+        "vr": {
+            "leftEyeObject": "18",
+            "rightEyeObject": "45",
+            "enable": false
+        },
+        "scripting": {
+            "sourcePaths": [
+                "/js/editor-components-bundle.js",
+                "js/"
+            ]
+        },
+        "ar": {
+            "framework": "webxr"
+        },
+        "rendering": {
+            "clearColor": [
+                0.0,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "bloom": {
+                "enabled": false
+            }
+        }
+    },
+    "animations": {
+        "141": {
+            "link": {
+                "name": "アーマチュアAction.002",
+                "file": "models\\ahiru_animation.glb"
+            }
+        }
+    },
+    "skins": {
+        "127": {
+            "link": {
+                "name": "アーマチュア.001",
+                "file": "models\\ahiru_animation.glb"
+            }
+        }
+    },
+    "pipelines": {
+        "33": {
+            "link": {
+                "name": "DistanceFieldVector",
+                "file": "default"
+            }
+        },
+        "34": {
+            "link": {
+                "name": "Flat Opaque",
+                "file": "default"
+            }
+        },
+        "35": {
+            "link": {
+                "name": "Flat Opaque Textured",
+                "file": "default"
+            }
+        },
+        "36": {
+            "link": {
+                "name": "MeshVisualizer",
+                "file": "default"
+            }
+        },
+        "37": {
+            "link": {
+                "name": "Phong Opaque",
+                "file": "default"
+            }
+        },
+        "38": {
+            "link": {
+                "name": "Phong Opaque Textured",
+                "file": "default"
+            }
+        },
+        "39": {
+            "link": {
+                "name": "Foliage",
+                "file": "default"
+            }
+        },
+        "40": {
+            "link": {
+                "name": "Particle",
+                "file": "default"
+            }
+        },
+        "47": {
+            "link": {
+                "name": "Depth",
+                "file": "default"
+            }
+        }
+    },
+    "files": [
+        "models/ar-target.glb",
+        "models/kyoryu.glb",
+        "models/ahiru_animation.glb"
+    ]
+}
